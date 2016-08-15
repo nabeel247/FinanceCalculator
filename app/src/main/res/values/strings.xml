@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FinanceCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="Future_Value">Calculate Future Value</string>
+    <string name="Present_Value">Calculate Present Value</string>
+    <string name="Loan">Calculate Loan</string>
+    <string name="cm">Click Me</string>
+    <string name="cm1">Click Me</string>
+    <string name="cm2">Click Me</string>
+    <string name="cv">Current Value</string>
+    <string name="roi">Rate of Interest</string>
+    <string name="nop">Number of Years</string>
+    <string name="fvans">Future Value is :</string>
+    <string name="cal">Calculate</string>
+    <string name="cvi">Current Value is</string>
+    <string name="fvii">Future Value</string>
+
+     <string-array name="options_x">
+         <item>Yearly</item>
+         <item>Monthly</item>
+         <item>Weekly</item>
+         <item>Daily</item>
+        </string-array>
+
+    <string-array name="options_y">
+        <item>Years</item>
+        <item>Months</item>
+        <item>Weeks</item>
+        <item>Days</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/grad8">
+
+    <TextView style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/cv"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="27dp" />
+
+    <TextView style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/roi"
+        android:id="@+id/textView5"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nop"
+        android:id="@+id/textView6"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="15dp" />
+
+    <TextView style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/fvans"
+        android:id="@+id/cvi"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/btnCal"
+        android:layout_centerHorizontal="true" />
+
+    <EditText style="@style/white1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtCV"
+        android:hint="Example:12000"
+        android:textColorHint="#b6b4b4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/btnCal"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/white1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtROI"
+        android:hint="Example:0.02"
+        android:textColorHint="#b6b4b4"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/txtCV"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/white1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtNOP"
+        android:layout_alignBottom="@+id/textView6"
+        android:hint="Example:2,3"
+        android:textColorHint="#b6b4b4"
+        android:layout_alignEnd="@+id/txtROI"
+        android:layout_toEndOf="@+id/btnCal"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtSI"
+        android:backgroundTint="@android:color/white"
+        android:layout_below="@+id/cvi"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cal"
+        android:id="@+id/btnCal"
+        android:onClick="fvm"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/spinner5"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner style="@style/white1"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/spinner4"
+        android:entries="@array/options_x"
+        android:backgroundTint="@android:color/white"
+        android:layout_above="@+id/textView6"
+        android:layout_toStartOf="@+id/btnCal" />
+
+    <Spinner style="@style/white1"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:id="@+id/spinner5"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/textView6"
+        android:entries="@array/options_y"
+        android:backgroundTint="@android:color/white"
+        android:layout_toEndOf="@+id/textView6" />
+
+</RelativeLayout>

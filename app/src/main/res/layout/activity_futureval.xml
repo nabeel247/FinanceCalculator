@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/grad8">
+
+    <TextView style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/cv"
+        android:id="@+id/textView4"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/roi"
+        android:id="@+id/textView5"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nop"
+        android:id="@+id/textView6"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView5"/>
+
+    <TextView style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/fvans"
+        android:id="@+id/cvi"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/btnCal"
+        android:layout_centerHorizontal="true" />
+
+    <EditText style="@style/white1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="Example:12000"
+        android:textColorHint="#b6b4b4"
+        android:id="@+id/txtCV"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/white1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="Ex:0.02"
+        android:textColorHint="#b6b4b4"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/txtROI"
+        android:layout_alignBottom="@+id/spinner4"
+        android:layout_toRightOf="@+id/spinner4"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/white1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtNOP"
+        android:layout_alignBottom="@+id/textView6"
+        android:hint="Ex:2,3"
+        android:textColorHint="#b6b4b4"
+        android:layout_toRightOf="@+id/spinner5"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/white1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtSI"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/cvi"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cal"
+        android:id="@+id/btnCal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="fvm" />
+
+    <Spinner style="@style/white1"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/spinner4"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:entries="@array/options_x"
+        android:backgroundTint="@android:color/white"/>
+
+    <Spinner style="@style/white1"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/spinner5"
+        android:layout_alignTop="@+id/textView6"
+        android:entries="@array/options_y"
+        android:layout_toEndOf="@+id/textView6"
+        android:backgroundTint="@android:color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="250dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nabeel.financecalculator.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/grad6">
+
+    <Button style="@style/nabStyleTablet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Future_Value"
+        android:id="@+id/FV"
+        android:onClick="fvm"
+        android:layout_below="@+id/PV"
+        android:layout_alignStart="@+id/PV"
+        android:padding="15dp"
+        android:layout_margin="5dp" />
+
+
+    <Button style="@style/nabStyleTablet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Present_Value"
+        android:id="@+id/PV"
+        android:onClick="pvm"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/L"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
+
+    <Button style="@style/nabStyleTablet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Simple Interest"
+        android:id="@+id/L"
+        android:onClick="sim"
+        android:layout_below="@+id/FV"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
+
+    <Button style="@style/nabStyleTablet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Car/Home Loan Amortization"
+        android:id="@+id/button"
+        android:onClick="lam"
+        android:layout_below="@+id/L"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
+
+    <Button style="@style/nabStyleTablet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Tip"
+        android:id="@+id/button2"
+        android:onClick="tipm"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
+
+</RelativeLayout>

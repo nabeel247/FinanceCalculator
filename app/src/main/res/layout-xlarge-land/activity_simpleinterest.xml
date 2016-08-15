@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/scrollViewSI"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/grad4">
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Principle Amount"
+        android:id="@+id/textView4"
+        android:layout_marginTop="80dp"
+       android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/roi"
+        android:id="@+id/textView5"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/textView4"/>
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nop"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Simple Interest"
+        android:id="@+id/cvi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnCal"
+        android:layout_centerHorizontal="true" />
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="Example:12000"
+        android:textColorHint="#b6b4b4"
+        android:inputType="numberDecimal"
+        android:id="@+id/txtCV"
+        android:backgroundTint="@android:color/white"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_toEndOf="@id/textView4"
+        android:layout_marginLeft="450dp"
+        />
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Ex:0.02"
+        android:textColorHint="#b6b4b4"
+        android:id="@+id/txtROI"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginLeft="450dp"
+        android:layout_alignBottom="@+id/spinner2"
+        android:layout_toEndOf="@+id/spinner2" />
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/txtNOP"
+        android:hint="Ex:2,3"
+        android:textColorHint="#b6b4b4"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginLeft="430dp"
+        android:layout_alignBottom="@+id/spinner9"
+        android:layout_toEndOf="@+id/spinner9" />
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:id="@+id/txtSI"
+        android:backgroundTint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cvi"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cal"
+        android:id="@+id/btnCal"
+        android:textSize="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/txtNOP"
+        android:layout_centerHorizontal="true" />
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total amount owed"
+        android:id="@+id/textView7"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/txtSI"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtTAO"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/txtSI"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner style="@style/whiteTablet"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner2"
+        android:entries="@array/options_x"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginLeft="50dp"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <Spinner style="@style/whiteTablet"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner9"
+        android:entries="@array/options_y"
+        android:backgroundTint="@android:color/white"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/textView4" />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/scrollViewSI"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="1dp"
+    android:background="@drawable/grad9" >
+
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Bill Amount"
+        android:id="@+id/textView4"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of people"
+        android:id="@+id/textView5"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tip%"
+        android:id="@+id/textView6"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/textView5"/>
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Tip Amount"
+        android:id="@+id/cvi"
+        android:layout_below="@+id/btnCal"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtCV"
+        android:hint="Example:1200"
+        android:textColorHint="#b6b4b4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="350dp"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtROI"
+        android:hint="Ex:4"
+        android:textColorHint="#b6b4b4"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginLeft="450dp"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="Enter 10 for 10%"
+        android:textColorHint="#b6b4b4"
+        android:id="@+id/txtNOP"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginLeft="500dp"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtSI"
+        android:layout_below="@+id/cvi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@android:color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cal"
+        android:id="@+id/btnCal"
+        android:layout_below="@+id/txtNOP"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:layout_marginTop="80dp"
+        android:onClick="pvm" />
+
+
+
+    <TextView  style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount per person+Tip"
+        android:id="@+id/textView7"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/txtSI"
+        android:layout_centerHorizontal="true" />
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtTAO"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@android:color/white"/>
+
+</RelativeLayout>
+</ScrollView>

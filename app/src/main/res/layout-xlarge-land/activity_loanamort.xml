@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/scrollViewSI"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/grad4">
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Principle Amount"
+        android:id="@+id/textView4"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="5dp" />
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/roi"
+        android:id="@+id/textView5"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:paddingStart="5dp" />
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nop"
+        android:id="@+id/textView6"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your monthly payment is:"
+        android:id="@+id/cvi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/btnCal" />
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Example:1200"
+        android:textColorHint="#b6b4b4"
+        android:ems="10"
+        android:id="@+id/txtCV"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="Ex:0.02"
+        android:textColorHint="#b6b4b4"
+        android:id="@+id/txtROI"
+        android:layout_toEndOf="@+id/spinner7"
+        android:layout_alignBottom="@+id/spinner7"
+        android:layout_marginLeft="500dp"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="Ex:2,3"
+        android:textColorHint="#b6b4b4"
+        android:id="@+id/txtNOP"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignEnd="@+id/txtROI"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText style="@style/whiteTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtSI"
+        android:layout_below="@+id/cvi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@android:color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cal"
+        android:id="@+id/btnCal"
+        android:onClick="pvm"
+        android:layout_marginTop="130dp"
+        android:textSize="40dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner style="@style/whiteTablet"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner7"
+        android:entries="@array/options_x"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/textView5"
+
+        android:backgroundTint="@android:color/white"/>
+
+    <Spinner style="@style/whiteTablet"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner8"
+        android:entries="@array/options_y"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@android:color/white"/>
+
+</RelativeLayout>
+</ScrollView>
